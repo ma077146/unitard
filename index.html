@@ -1,0 +1,81 @@
+<html>
+
+<head>
+    <title>
+        TAQ Client Form Starter
+    </title>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Include Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Bootbox -->
+    <script src="bootbox.min.js"></script>
+    <!-- Our local JavaScript file -->
+    <script src="client-forms.js"></script>
+    <!-- Local style sheet to override Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <h2>TAQ Client Form Starter</h2>
+    <form name="taqFormStarter" class="form-horizontal" id="taq-submit" method="post" action="">
+        <div class="form-group">
+            <div class="col-sm-3">
+                <label for="form-number">Form Number*</label>
+                <input type="text" class="form-control" name="form-Number" id="form-number" placeholder="Enter form number">
+                <small id="formNumberHelp" class="form-text text-muted">The number of the form in sequence: 1, 2, etc.</small>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-4">
+                <label for="client-name">Client Name*</label>
+                <input type="text" class="form-control" name "client-name" id="client-name" aria-describedby="clientNameHelp" placeholder="Enter Client Name">
+                <small id="clientNameHelp" class="form-text text-muted">Must match value of define( 'CLIENT_CODEREF', 'BCE') in client.conf.php, where "BCE" is the name.</small>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-4">
+                <label for="class-name">Class Name*</label>
+                <input type="text" class="form-control" id="class-name" aria-describedby="classNameHelp" placeholder="Enter Class Name">
+                <small id="classNameHelp" class="form-text text-muted">The name of the .class.php file, in camel case: Example = "MyClassName"</small>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-4">
+                <label for="class-description">Class Description*</label>
+                <input type="text" class="form-control" id="class-description" aria-describedby="classDescriptionHelp" placeholder="What This Class Does">
+                <small id="classNameHelp" class="form-text text-muted">Describe what this class file does: Example = "Standard IT Agreement"</small>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-4">
+                <label for="file-name">File Name</label>
+                <input type="text" class="form-control" id="file-name" aria-describedby="fileNameHelp" placeholder="Enter File Name">
+                <small id="fileNameHelp" class="form-text text-muted">The name of the associated file, if any, without spaces: "MyFile.pdf OR My_File.pdf"</small>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-4">
+                <label for="file-name">QA/DEMQA DB Name</label>
+                <input type="text" class="form-control" id="demqa-db" aria-describedby="demqaDatabaseHelp" placeholder="Enter QA/DEMQA DataBase Name">
+                <small id="demqaDatabaseHelp" class="form-text text-muted">The name of the QA/DEMQA DataBase: Example = "implmnt_default"</small>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-4">
+                <label for="file-name">Production DB Name</label>
+                <input type="text" class="form-control" id="prod-db" aria-describedby="prodDatabaseHelp" placeholder="Enter Production DataBase Name">
+                <small id="prodDatabaseHelp" class="form-text text-muted">The name of the Production DataBase: Example = "ercfrs_mainscape_inc"</small>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-4">
+                <input class="btn btn-primary taq-reset" id="taq-reset" type="reset" onClick=location.reload() value="Reset">
+                <input class="btn btn-primary taq-submit" id="taq-submit" type="submit" value="Submit">
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
