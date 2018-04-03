@@ -22,13 +22,14 @@ REPLACE INTO .form_fields
 (#FIRST-FIELD-ID, 'Text', 'employee_name', NULL, NULL, NULL, NULL, '$jobseeker->getFormattedName()', 0);
 
 -- SELECT * FROM .form_fields_options;
-REPLACE INTO .form_fields_options
-(form_fields_options_id, options_group_id, option_value, display_order, is_active) VALUES
-(1, 3, 'yes', 1, 1), 
-(2, 3, 'no', 2, 1), 
-(3, 2, '2', 2, 1), 
-(4, 2, '3', 3, 1), 
-(5, 2, '1', 1, 1);
+-- REPLACE INTO .form_fields_options
+-- (form_fields_options_id, options_group_id, option_value, display_order, is_active) VALUES
+-- These values are likely already used; check before using them!
+-- (1, 3, 'yes', 1, 1),
+-- (2, 3, 'no', 2, 1),
+-- (3, 2, '2', 2, 1),
+-- (4, 2, '3', 3, 1),
+-- (5, 2, '1', 1, 1);
 
 -- SELECT * FROM .form_steps;
 REPLACE INTO .form_steps
