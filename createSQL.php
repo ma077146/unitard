@@ -23,7 +23,7 @@ function createSqlTemplate($directory, $formNum, $client, $file, $class, $demqa_
     // Open the templates/template.sql file.
     if ($sql_file = fopen("templates/template.sql", "r")) {
 
-        $writeTo = fopen("client-forms/" . $client . "/" . $formNum . "-client-forms.sql", "w") 
+        $writeTo = fopen("client-forms/" . $client . "/" . $formNum . "-" . $class . ".sql", "w")
         or die ("Unable to create SQL file!");
 
         // Set a few values.
