@@ -48,9 +48,10 @@ function createSqlTemplate($directory, $formNum, $client, $file, $class, $demqa_
             $line = str_replace("#FORM-NUMBER", $formNum, $line);
             $line = str_replace("#CLASS-NAME", $class, $line);
             $line = str_replace("#FIRST-FIELD-ID", $form_field_id, $line);
-            // This has to be done first because it's similar to the following line.
+            // This line has to be done first because it's similar to the following line.
             $line = str_replace("#TWO-FORM-STEP-ID", $form_step_id_2 , $line);
             $line = str_replace("#FORM-STEP-ID", $form_step_id, $line);
+            $line = str_replace("id#", "id" . $formNum);
             
             // Write the line to the file.
             fwrite($writeTo, $line);

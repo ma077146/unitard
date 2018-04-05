@@ -49,6 +49,6 @@ REPLACE INTO .form_steps_contents_coordinates
 REPLACE INTO .multilingual_static_text
 (ml_page_id, page_item, language_id, text) VALUES
 -- Form 1 background check consent
-(51, 'form_id1_title', 1, 'Form Title Here'),
-(51, 'form_id1_wizard_instructions', 1, ''),
+(51, 'form_id#_title', 1, 'Form Title Here'),
+(51, 'form_id#_wizard_instructions', 1, ''),
 (52, 'form_text', 1, '<div class="message download"><p>Please download and read, and complete the <a href="[PdfUrl]">Form Title Here (PDF)</a></p></div>');
