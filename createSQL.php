@@ -63,8 +63,7 @@ function createSqlTemplate($directory, $formNum, $client, $file, $class, $demqa_
         return TRUE;
     }
     else {
-      echo 'Uh-oh!';
-        return FALSE;
+      return FALSE;
     }
 }
     
