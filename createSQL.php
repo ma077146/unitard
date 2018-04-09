@@ -51,7 +51,7 @@ function createSqlTemplate($directory, $formNum, $client, $file, $class, $demqa_
             // This line has to be done first because it's similar to the following line.
             $line = str_replace("#TWO-FORM-STEP-ID", $form_step_id_2 , $line);
             $line = str_replace("#FORM-STEP-ID", $form_step_id, $line);
-            $line = str_replace("id#", "id" . $formNum);
+            $line = str_replace("id#", "id" . $formNum, $line);
             
             // Write the line to the file.
             fwrite($writeTo, $line);
@@ -63,6 +63,7 @@ function createSqlTemplate($directory, $formNum, $client, $file, $class, $demqa_
         return TRUE;
     }
     else {
+      echo 'Uh-oh!';
         return FALSE;
     }
 }
