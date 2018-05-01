@@ -5,7 +5,7 @@ Tool to allow faster creation of templates for form class and SQL
 
 [1] cd into /repos/Yellow-PreHire/enterprise/clearstar-qa/
 
-[2] git@github.com:ma077146/unitard.git
+[2] git clone git@github.com:ma077146/unitard.git
 
 [3] cd into unitard
 
