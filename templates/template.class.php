@@ -8,6 +8,7 @@
    *
    * @package WebForm\Form\ClientForm\#CLIENT-NAME
    */
+  // The below line will be fine once value substitutions are made.
   class #CLIENT-NAME_WebForm_Form_ClientForm_#CLASS-NAME extends WebForm_Form_ClientForm {
 
     /**
